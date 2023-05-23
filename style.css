@@ -30,10 +30,11 @@ h1 {                                      /* Sami urejamo stile */
 .glavni-menu ul {                                      /* Sami urejamo stile */
   list-style: none;
   margin: 10vw;
+  margin-top: 5vh;
   padding: 10px;
   justify-content: center;
   align-content:center;
-  font-size: 5vw;
+  font-size: 2rem;
   vertical-align: middle;
 }
 
@@ -124,7 +125,7 @@ canvas {
   padding: 5px;
   margin-top:0px;
   margin-bottom:30px;
-  background-color: #00aaff;
+  background-color: #005239;
   color: rgb(255, 97, 97);
   height: 200px;
 }
