@@ -24,6 +24,9 @@ h1 {                                      /* Sami urejamo stile */
     margin-right: auto;
     width: 90%;
     border-radius: 21px;
+
+    animation-timing-function: cubic-bezier(1, 0, 0, 1.01);
+    animation: dot-animation 2s infinite;
 }
 
 /* START --- domaci meni */
@@ -165,4 +168,12 @@ canvas {
     width:400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@keyframes dot-animation {
+  20% { border: 5px dotted #ff5e57; }
+  40% { border: 5px dotted #ffffff; }
+  60% { border: 5px dotted #ff5e57; }
+  80% { border: 5px dotted #ffffff; }
+  100% { border: 5px dotted #ff5e57; }
 }
