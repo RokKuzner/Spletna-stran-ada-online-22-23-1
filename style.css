@@ -2,3 +2,166 @@ html {
   height: 100%;
   width: 100%;
 }
+
+body {                          /* sami dodamo background sliko */ 
+    background-image: url("/slike/icons-back.png");
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {                                      /* Sami urejamo stile */
+    justify-content: center;
+    display: flex;
+    background-color: #3c40c6;
+    color: #d2dae2;
+    border: 5px dotted #ff5e57;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    border-radius: 21px;
+}
+
+/* START --- domaci meni */
+.glavni-menu ul {                                      /* Sami urejamo stile */
+  list-style: none;
+  margin: 10vw;
+  padding: 10px;
+  justify-content: center;
+  align-content:center;
+  font-size: 5vw;
+  vertical-align: middle;
+}
+
+.glavni-menu ul li {                                     
+     /* Sami urejamo stile */  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(241, 89, 82);
+    margin: 30px;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+
+.glavni-menu ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.glavni-menu ul a li:hover {
+    background: rgba(241, 89, 82, 0.5);
+    color: #fff;
+    border: 2px solid #ff5e57;
+}
+
+
+/* END --- domaci meni */
+
+/* START --- navadn meni */
+.menu ul {                                      /* Sami urejamo stile */
+  list-style: none;
+  margin: 20px;
+  padding: 10px;
+  margin-bottom:0px;
+  display:flex;
+  justify-content: center;
+  align-content:center;
+  font-size: 30px;
+  vertical-align: middle;
+  
+}
+
+.menu ul li {                                      /* Sami urejamo stile */    
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background: #ff5e57;
+  margin: 30px;
+  padding: 10px;
+}
+
+.menu ul li a { 
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.menu ul li:hover {
+  background: #d2dae2;
+}
+
+.menu ul li:hover a {
+  color: #ff5e57;
+}
+/* END --- navadn meni */
+
+/* START --- igrica */
+canvas {
+    border-radius: 5px;
+    display:flex;
+    margin:auto;
+}
+/* END --- igrica */
+
+/* START --- grid container */
+.vsebina {
+    width:60%;
+    display:flex;
+    justify-content:center;
+    margin:auto;
+}
+
+.lihi { /* za classe uporabljamo piko pred imenom */
+  /* poravnani levo, pisava 20px; barva ozadja oranžna, barva pisave je bela */
+  text-align: left;
+  font-size: 30px;
+  padding: 5px;
+  margin-top:0px;
+  margin-bottom:30px;
+  background-color: #00aaff;
+  color: rgb(255, 97, 97);
+  height: 200px;
+}
+
+.sodi {
+  /* poravnani na sredino, pisava 30px; barva ozadja zelena, barva pisave je rumena */
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+  margin-top:0px;
+  margin-bottom:30px;
+  background-color: #92074a;
+  color: rgb(255, 255, 255);
+  height: 200px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "levo desno";
+}
+
+.levo { grid-area: levo; }
+
+.desno { grid-area: desno; }
+/* END --- grid container */
+
+.tutorial {
+    color: #ffffff;
+    font-size: 25px;
+    background-color: #808e9b;
+    border: 2px solid #ff5e57;
+    padding: 12px; 
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
