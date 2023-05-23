@@ -1,1 +1,1 @@
-This game was made in 1 year long course with 404.si. Check them out.
+This game was made in 1 year long course with <a href="https://404.si">zavod 404</a>. Check them out.
